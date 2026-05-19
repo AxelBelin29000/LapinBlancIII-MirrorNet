@@ -7,6 +7,16 @@ public class VRNetworkManager : NetworkManager
     public Transform[] spawnPoints;
     private int _spawnIndex = 0;
 
+    public GameObject cubePrefab;
+    public Transform cubeSpawnPoint;
+
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+        GameObject cube = Instantiate(cubePrefab, Vector3.zero, Quaternion.identity);
+        NetworkServer.Spawn(cube);
+    }
+
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         Transform spawn = spawnPoints[_spawnIndex % spawnPoints.Length];
