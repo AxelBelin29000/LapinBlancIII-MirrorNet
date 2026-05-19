@@ -25,4 +25,5 @@ public class VRNetworkManager : NetworkManager
         GameObject player = Instantiate(playerPrefab, spawn.position, spawn.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
     }
+
 }

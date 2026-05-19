@@ -23,4 +23,20 @@ public class VRPlayerSetup : NetworkBehaviour
             if (playArea != null) playArea.enabled = false;
         }
     }
+
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        if (!isLocalPlayer)
+        {
+            // Disable SteamVR tracking on remote rig
+            GetComponentInChildren<SteamVR_PlayArea>()?.gameObject.SetActive(false);
+
+            foreach (var tracked in GetComponentsInChildren<SteamVR_Behaviour_Pose>())
+                tracked.enabled = false;
+
+            foreach (var hand in GetComponentsInChildren<SteamVR_Behaviour_Skeleton>())
+                hand.enabled = false;
+        }
+    }
 }
