@@ -599,7 +599,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 8297404794719718613, guid: c94bee30f38ef12428458c4417c3d1aa, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 231765175328893476, guid: 100712f193caa7a43960046242e6df0c, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -618,6 +619,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1455641733}
   - {fileID: 1445297522}
+  cubePrefab: {fileID: 231765175328893476, guid: 100712f193caa7a43960046242e6df0c, type: 3}
+  cubeSpawnPoint: {fileID: 0}
 --- !u!4 &846292504
 Transform:
   m_ObjectHideFlags: 0
