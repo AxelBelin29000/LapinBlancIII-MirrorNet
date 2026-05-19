@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.lapinblanciiimiror.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\recherche\\Desktop\\LapinBlancIII-MirrorNet\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "LapinBlancIIIMiror [Testing]"
+        }
+      }
+    }
+  ]
+}
