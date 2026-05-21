@@ -1,4 +1,5 @@
 using Mirror;
+using System.Collections;
 using UnityEngine;
 using Valve.VR;
 
@@ -24,13 +25,13 @@ public class VRPlayerSetup : NetworkBehaviour
     void OnLeftTrackedChanged(bool oldVal, bool newVal)
     {
         leftProxy.gameObject.SetActive(newVal);
-        if (leftRenderModel != null) leftRenderModel.enabled = newVal;
+        if (leftRenderModel != null) leftRenderModel.gameObject.SetActive(newVal);
     }
 
     void OnRightTrackedChanged(bool oldVal, bool newVal)
     {
         rightProxy.gameObject.SetActive(newVal);
-        if (rightRenderModel != null) rightRenderModel.enabled = newVal;
+        if (rightRenderModel != null) rightRenderModel.gameObject.SetActive(newVal);
     }
 
     void Update()
@@ -42,6 +43,8 @@ public class VRPlayerSetup : NetworkBehaviour
 
         bool isLeftTracked = leftPose != null && leftPose.isValid;
         bool isRightTracked = rightPose != null && rightPose.isValid;
+
+        Debug.Log($"Left: {isLeftTracked} Right: {isRightTracked}");
 
         if (isLeftTracked != leftTracked)
             CmdSetLeftTracked(isLeftTracked);
@@ -62,8 +65,8 @@ public class VRPlayerSetup : NetworkBehaviour
         }
 
         // show/hide SteamVR render model locally
-        if (leftRenderModel != null) leftRenderModel.enabled = isLeftTracked;
-        if (rightRenderModel != null) rightRenderModel.enabled = isRightTracked;
+        if (leftRenderModel != null) leftRenderModel.gameObject.SetActive(isLeftTracked);
+        if (rightRenderModel != null) rightRenderModel.gameObject.SetActive(isRightTracked);
     }
 
     [Command]
@@ -81,7 +84,16 @@ public class VRPlayerSetup : NetworkBehaviour
         leftRenderModel = controllerLeft.GetComponentInChildren<SteamVR_RenderModel>();
         rightRenderModel = controllerRight.GetComponentInChildren<SteamVR_RenderModel>();
 
-        // force initial state
+        Debug.Log($"Left render model found: {leftRenderModel != null}");
+        Debug.Log($"Right render model found: {rightRenderModel != null}");
+
+        StartCoroutine(InitialStateCheck());
+    }
+
+    IEnumerator InitialStateCheck()
+    {
+        // wait for SteamVR to report correct tracking state
+        yield return new WaitForSeconds(1f);
         CmdSetLeftTracked(leftPose != null && leftPose.isValid);
         CmdSetRightTracked(rightPose != null && rightPose.isValid);
     }
