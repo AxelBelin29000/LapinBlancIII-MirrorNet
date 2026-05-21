@@ -942,3 +942,5 @@ MonoBehaviour:
   headProxy: {fileID: 3117677567650183360}
   leftProxy: {fileID: 6078863959364529454}
   rightProxy: {fileID: 4990353800469523151}
+  leftPose: {fileID: 3920698210181695976}
+  rightPose: {fileID: 8659124351538371454}
