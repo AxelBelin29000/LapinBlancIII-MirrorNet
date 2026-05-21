@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3409325766269625955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2570279016067377666}
+  m_Layer: 0
+  m_Name: Referentiel Clone humain jambe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2570279016067377666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409325766269625955}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.227, y: 0.562, z: -0.225}
+  m_LocalScale: {x: 0.77019, y: 0.77019, z: 0.77019}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1627052424797352315}
+  m_LocalEulerAnglesHint: {x: 0, y: -354.599, z: 0}
+--- !u!1 &8422055567748528118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627052424797352315}
+  m_Layer: 0
+  m_Name: Referentiel Clone humain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1627052424797352315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422055567748528118}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.04711392, z: -0, w: -0.9988895}
+  m_LocalPosition: {x: 1.3, y: -2.605, z: -0.823}
+  m_LocalScale: {x: 2.2067108, y: 2.2067106, z: 2.2067108}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2570279016067377666}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -354.599, z: 0}
