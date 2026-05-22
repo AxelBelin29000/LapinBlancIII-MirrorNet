@@ -2341,15 +2341,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7972774893707679847}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08445573, y: 0.96810097, z: 0.12498841, w: 0.20006433}
-  m_LocalPosition: {x: 0.19822769, y: 0.08859876, z: -0.7897671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.128, y: 0.058, z: -0.747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7314960600487457341}
-  - {fileID: 591167197030528092}
   m_Father: {fileID: 2221118180044418336}
-  m_LocalEulerAnglesHint: {x: 117.289, y: 30.214005, z: 126.981}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &125242493823781522
 Light:
   m_ObjectHideFlags: 0
@@ -5876,7 +5875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 7
+  index: 5
   origin: {fileID: 8739606140229763852}
 --- !u!1 &588834676883281918
 GameObject:
@@ -5905,12 +5904,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5520022902777368437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.121579476, y: 0.102423914, z: 0.040583152}
+  m_LocalRotation: {x: -0.48581952, y: 0.51378936, z: 0.51378924, w: 0.48581955}
+  m_LocalPosition: {x: -0.23429355, y: -11.355678, z: -6.653067}
+  m_LocalScale: {x: 1.1573193, y: 0.9749769, z: 0.3863125}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 122734275590078744}
+  m_Father: {fileID: 1475322875178447733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &593517521152542935
 MeshRenderer:
@@ -9302,7 +9301,7 @@ Transform:
   m_GameObject: {fileID: 5604762472349179443}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.52006, y: -1.37618, z: -3.23999}
+  m_LocalPosition: {x: 3.663, y: -1.37618, z: -2.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10405,13 +10404,13 @@ MonoBehaviour:
     - {fileID: 3829450368559249505}
     - {fileID: 1098221854312987047}
     - {fileID: 2543074350157988144}
-    deviceIndex: 4
+    deviceIndex: 1
   - trackerObjects:
     - {fileID: 4784731981144036763}
     - {fileID: 6516380409765407771}
     - {fileID: 5983154223448291440}
     - {fileID: 4520559440535732030}
-    deviceIndex: 7
+    deviceIndex: 5
   - trackerObjects:
     - {fileID: 7972774893707679847}
     - {fileID: 7576824791700380765}
@@ -10565,7 +10564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 7
+  index: 5
   origin: {fileID: 3184391800653357626}
 --- !u!135 &1300981442398716841
 SphereCollider:
@@ -11680,16 +11679,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893766502322735143}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.3705614, y: -0.16518009, z: -0.6674359}
+  m_LocalRotation: {x: -0, y: -0.66139513, z: -0, w: 0.7500377}
+  m_LocalPosition: {x: 1.079, y: 0.657, z: -0.205}
   m_LocalScale: {x: 0.10505264, y: 0.105052635, z: 0.10505264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6383430858021582374}
   - {fileID: 3060224063889145768}
+  - {fileID: 591167197030528092}
+  - {fileID: 4696120137969694711}
   - {fileID: 4248751460962785371}
   m_Father: {fileID: 6915192302170825577}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -82.813, z: 0}
 --- !u!4 &1479310225596754947
 Transform:
   m_ObjectHideFlags: 0
@@ -16935,7 +16936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 4
+  index: 1
   origin: {fileID: 8739606140229763852}
 --- !u!33 &2322370398001325683
 MeshFilter:
@@ -23353,7 +23354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6434235363939523421}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
@@ -29140,7 +29141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 7
+  index: 5
   origin: {fileID: 1455641733}
 --- !u!33 &4208963564655368454
 MeshFilter:
@@ -32660,12 +32661,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5633026973354885343}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12157952, y: 0.102423936, z: 0.040583167}
+  m_LocalRotation: {x: -0.48581952, y: 0.51378936, z: 0.51378924, w: 0.48581955}
+  m_LocalPosition: {x: -0.1060124, y: -11.403274, z: -4.3625646}
+  m_LocalScale: {x: 1.1573199, y: 0.9749771, z: 0.38631263}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8180673332034388088}
+  m_Father: {fileID: 1475322875178447733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4696981636510299713
 Transform:
@@ -35688,7 +35689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnotFollower
   splineContainer: {fileID: 4027531249322061462}
   knotIndex: 1
-  targetObject: {fileID: 122734275590078744}
+  targetObject: {fileID: 591167197030528092}
 --- !u!65 &5131352244805210171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41050,7 +41051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5893493855526555319
 GameObject:
   m_ObjectHideFlags: 0
@@ -41388,7 +41389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 7
+  index: 5
   origin: {fileID: 3266235126852481396}
 --- !u!23 &5934834224064923966
 MeshRenderer:
@@ -45103,7 +45104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &6437213666777226442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48997,7 +48998,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7972774893707679847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
@@ -49871,7 +49872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 4
+  index: 1
   origin: {fileID: 1455641733}
 --- !u!23 &7065289151129335974
 MeshRenderer:
@@ -52321,7 +52322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnotFollower
   splineContainer: {fileID: 4132235513809496559}
   knotIndex: 1
-  targetObject: {fileID: 8180673332034388088}
+  targetObject: {fileID: 4696120137969694711}
 --- !u!33 &7395989405948258204
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55114,7 +55115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 4
+  index: 1
   origin: {fileID: 3184391800653357626}
 --- !u!4 &7790963489202195159
 Transform:
@@ -55342,7 +55343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &7847367296065220619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55938,7 +55939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!205 &7974506423501186043
 LODGroup:
   m_ObjectHideFlags: 0
@@ -56704,7 +56705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: SteamVR::Valve.VR.SteamVR_TrackedObject
-  index: 4
+  index: 1
   origin: {fileID: 3266235126852481396}
 --- !u!33 &8087087082690661588
 MeshFilter:
@@ -57141,15 +57142,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6434235363939523421}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04825195, y: -0.9742368, z: -0.13434511, w: 0.17460172}
-  m_LocalPosition: {x: -0.19488837, y: 0.11206217, z: -0.7862189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.113, y: 0.058, z: -0.752}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7196738832280623465}
-  - {fileID: 4696120137969694711}
   m_Father: {fileID: 6851389699024788870}
-  m_LocalEulerAnglesHint: {x: 115.45401, y: -211.535, z: -130.411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8187509124011902099
 MeshRenderer:
   m_ObjectHideFlags: 0
